@@ -126,6 +126,7 @@
   const toBase = (v, unit) => { const [u, f] = baseOf(unit); return { u, v: v * f }; };
   const fromBase = (v, unit) => v / baseOf(unit)[1];
   const round = (v) => Math.round(v * 100) / 100;
+  const isCount = (u) => ["", "stk", "stück"].includes(String(u || "").toLowerCase().replace(/\.$/, ""));
   const pantryList = () => Object.entries(data.pantry).map(([id, p]) => ({ id, ...p }));
   const shopList = () => Object.entries(data.shopping).map(([id, s]) => ({ id, ...s }));
   const findPantry = (name) => pantryList().find(p => sameItem(p.name, name));
@@ -313,8 +314,9 @@
       </form>
       <ul class="shoplist">${items.map(s => `
         <li class="${s.checked ? "done" : ""}"><label><input class="chk" type="checkbox" data-shop="${esc(s.id)}" ${s.checked ? "checked" : ""}>
-          <span class="amt">${s.amount != null ? fmtAmount(s.amount, s.unit) : ""}</span>
-          <span class="nm">${esc(s.name)}${(s.recipes || []).length ? `<small>${esc(s.recipes.join(", "))}</small>` : ""}</span></label></li>`).join("")}
+          <span class="cnt">${s.amount != null && isCount(s.unit) ? fmtAmount(s.amount, "") : ""}</span>
+          <span class="nm">${esc(s.name)}${(s.recipes || []).length ? `<small>${esc(s.recipes.join(", "))}</small>` : ""}</span>
+          <span class="qty">${s.amount != null && !isCount(s.unit) ? fmtAmount(s.amount, s.unit) : ""}</span></label></li>`).join("")}
       </ul>
       ${!items.length ? `<p class="empty">Der Einkaufszettel ist leer.</p>` : ""}
       ${checked ? `<div class="actions"><button type="button" class="btn" data-act="to-pantry">${checked} gekaufte in den Vorrat</button><button type="button" class="btn ghost" data-act="remove-checked">Gekaufte entfernen</button></div>` : ""}
