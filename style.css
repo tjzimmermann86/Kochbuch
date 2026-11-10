@@ -159,7 +159,7 @@ textarea, .field { width: 100%; padding: 11px 12px; border-radius: 10px; border:
 .addrow .btn { grid-column: 1 / -1; }
 .addrow input, .addrow select, .pedit input, .pedit select { width: 100%; padding: 10px; border-radius: 10px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); min-width: 0; font-size: 1rem; }
 .shoplist label { display: flex; align-items: baseline; gap: 12px; padding: 13px 0; }
-.shoplist .amt { flex: none; min-width: 3.5em; text-align: left; }
+.shoplist .amt { flex: none; width: 4.5em; text-align: right; }
 .shoplist .nm { min-width: 0; }
 .shoplist small { display: block; color: var(--muted); font-size: .8rem; }
 .shoplist li.done .nm, .shoplist li.done .amt { color: var(--muted); text-decoration: line-through; }

@@ -313,7 +313,7 @@
       </form>
       <ul class="shoplist">${items.map(s => `
         <li class="${s.checked ? "done" : ""}"><label><input class="chk" type="checkbox" data-shop="${esc(s.id)}" ${s.checked ? "checked" : ""}>
-          ${s.amount != null ? `<span class="amt">${fmtAmount(s.amount, s.unit)}</span>` : ""}
+          <span class="amt">${s.amount != null ? fmtAmount(s.amount, s.unit) : ""}</span>
           <span class="nm">${esc(s.name)}${(s.recipes || []).length ? `<small>${esc(s.recipes.join(", "))}</small>` : ""}</span></label></li>`).join("")}
       </ul>
       ${!items.length ? `<p class="empty">Der Einkaufszettel ist leer.</p>` : ""}
