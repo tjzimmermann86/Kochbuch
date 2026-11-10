@@ -158,7 +158,8 @@ textarea, .field { width: 100%; padding: 11px 12px; border-radius: 10px; border:
 .addrow .wide { grid-column: 1 / -1; }
 .addrow .btn { grid-column: 1 / -1; }
 .addrow input, .addrow select, .pedit input, .pedit select { width: 100%; padding: 10px; border-radius: 10px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); min-width: 0; font-size: 1rem; }
-.shoplist label { display: flex; align-items: baseline; gap: 12px; padding: 13px 0; }
+.shoplist label { display: flex; align-items: center; gap: 12px; padding: 13px 0; }
+.shoplist .chk { transform: none; flex: none; }
 .shoplist .cnt { flex: none; width: 2em; font-family: var(--font-mono); font-size: .9rem; }
 .shoplist .nm { flex: 1; }
 .shoplist .qty { flex: none; font-family: var(--font-mono); font-size: .86rem; color: var(--muted); text-align: right; white-space: nowrap; }
