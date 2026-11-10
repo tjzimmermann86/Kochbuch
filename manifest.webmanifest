@@ -1,0 +1,16 @@
+{
+  "name": "Mein Kochbuch",
+  "short_name": "Kochbuch",
+  "description": "Rezepte, Einkaufszettel und Vorrat",
+  "lang": "de",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f7f4fb",
+  "theme_color": "#f7f4fb",
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/icons/icon-512-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

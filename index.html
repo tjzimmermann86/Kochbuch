@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kochbuch</title>
+<meta name="theme-color" content="#f7f4fb" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1d1b26" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Kochbuch">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="icon" href="/icons/icon-192.png" type="image/png">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Source+Sans+3:wght@400;600&family=JetBrains+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="top">
+  <button type="button" class="iconbtn" id="back" aria-label="Zurück" hidden>←</button>
+  <h1 id="title">Kochbuch</h1>
+  <div class="topright">
+    <span class="sync" id="sync" aria-live="polite"></span>
+    <button type="button" class="themebtn" id="theme" aria-label="Dunkelmodus umschalten" aria-pressed="false">
+      <span aria-hidden="true">☀︎</span><span aria-hidden="true">☾</span>
+    </button>
+  </div>
+</header>
+
+<main id="view" class="view"></main>
+
+<nav class="tabbar" aria-label="Bereiche">
+  <a href="#" data-tab="rezepte"><span class="ti" aria-hidden="true">📖</span><span>Rezepte</span></a>
+  <a href="#einkauf" data-tab="einkauf"><span class="ti" aria-hidden="true">🛒</span><span>Einkauf</span><span class="badge" id="b-shop"></span></a>
+  <a href="#vorrat" data-tab="vorrat"><span class="ti" aria-hidden="true">🫙</span><span>Vorrat</span><span class="badge warn" id="b-pantry"></span></a>
+</nav>
+
+<script src="/app.js"></script>
+</body>
+</html>

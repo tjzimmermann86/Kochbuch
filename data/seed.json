@@ -1,0 +1,130 @@
+{
+ "pantry": {
+  "bsjs5snghzutq2ttsik5": {
+   "amount": 150,
+   "best": "",
+   "name": "Hoisin-Sauce",
+   "unit": "ml",
+   "updated": "2026-11-10T08:45:11.029Z"
+  },
+  "5v5zdcu3li7vcfhu8tyg": {
+   "amount": 1,
+   "best": "",
+   "name": "Trockenhefe",
+   "unit": "Pck.",
+   "updated": "2026-11-10T08:46:27.336Z"
+  },
+  "b21ecrlil9qjwvyy0hlq": {
+   "amount": 500,
+   "best": "",
+   "name": "Kartoffeln",
+   "unit": "g",
+   "updated": "2026-11-10T08:47:23.852Z"
+  },
+  "fxy12av5ian5ruj2b7br": {
+   "amount": 500,
+   "best": "",
+   "name": "Mehl",
+   "unit": "g",
+   "updated": "2026-11-10T08:45:41.279Z"
+  },
+  "t8zngmceslp7ybx0mqp4": {
+   "amount": 10,
+   "best": "",
+   "name": "Zwiebeln",
+   "unit": "Stück",
+   "updated": "2026-11-10T08:47:16.755Z"
+  },
+  "kqgw11ob7jrht4lpevdp": {
+   "amount": 500,
+   "best": "",
+   "name": "Backschokolade",
+   "unit": "g",
+   "updated": "2026-11-10T08:47:01.520Z"
+  },
+  "wdsvsz96kgv2nvnpjvsu": {
+   "amount": 10,
+   "best": "",
+   "name": "Vanillezucker",
+   "unit": "Pck.",
+   "updated": "2026-11-10T08:46:10.441Z"
+  },
+  "0mqh4vm099ffsbd312j3": {
+   "amount": 250,
+   "best": "",
+   "name": "Tahin",
+   "unit": "ml",
+   "updated": "2026-11-10T08:45:21.937Z"
+  },
+  "el3p5y3w97epmk8uyukd": {
+   "amount": 25,
+   "best": "",
+   "name": "Puderzuckern",
+   "unit": "g",
+   "updated": "2026-11-10T08:48:09.797Z"
+  },
+  "6mbw1kpum0obgh50g48g": {
+   "amount": 10,
+   "best": "",
+   "name": "Backpulver",
+   "unit": "Pck.",
+   "updated": "2026-11-10T08:46:36.493Z"
+  },
+  "wo4hv66m4p5cwjttuaj2": {
+   "amount": 500,
+   "best": "",
+   "name": "Rohrzucker",
+   "unit": "g",
+   "updated": "2026-11-10T08:48:19.622Z"
+  },
+  "8ukimmxlde8spv0xiiza": {
+   "amount": 100,
+   "best": "",
+   "name": "Ahornsirup",
+   "unit": "ml",
+   "updated": "2026-11-10T08:44:45.136Z"
+  }
+ },
+ "shopping": {
+  "geruchsentfernen_stk": {
+   "amount": null,
+   "checked": false,
+   "created": "2026-11-10T08:56:38.553Z",
+   "name": "Geruchsentfernen",
+   "recipes": [],
+   "unit": ""
+  },
+  "muellbeutel_stk": {
+   "amount": null,
+   "checked": false,
+   "created": "2026-11-10T08:56:32.265Z",
+   "name": "Müllbeutel",
+   "recipes": [],
+   "unit": ""
+  },
+  "gurke_stk": {
+   "amount": 1,
+   "checked": false,
+   "created": "2026-11-10T08:56:19.933Z",
+   "name": "Gurke",
+   "recipes": [],
+   "unit": ""
+  },
+  "brot_stk": {
+   "amount": null,
+   "checked": false,
+   "created": "2026-11-10T08:56:26.322Z",
+   "name": "Brot",
+   "recipes": [],
+   "unit": ""
+  },
+  "taschentuecher_stk": {
+   "amount": null,
+   "checked": false,
+   "created": "2026-11-10T08:56:43.185Z",
+   "name": "Taschentücher",
+   "recipes": [],
+   "unit": ""
+  }
+ }
+}

@@ -1,0 +1,1123 @@
+[
+ {
+  "id": "kuerbis-porree-pfanne",
+  "added": "2026-10-24T12:17:00+02:00",
+  "category": "Pfannengericht",
+  "description": "Schnelle Sahnepfanne mit Kürbis, Möhren und Porree – alles auf dem Herd.",
+  "emoji": "🎃",
+  "equipment": [
+   "Kochtopf mit Deckel",
+   "Große Pfanne mit Deckel",
+   "Reibe"
+  ],
+  "ingredients": [
+   {
+    "amount": 300,
+    "name": "Reis (Basmati oder Langkorn)",
+    "unit": "g"
+   },
+   {
+    "amount": 400,
+    "name": "Hokkaido-Kürbis, klein gewürfelt (mit Schale)",
+    "unit": "g"
+   },
+   {
+    "amount": 2,
+    "name": "Möhren, in dünnen Scheiben"
+   },
+   {
+    "amount": 1,
+    "name": "Porreestange, in Ringen"
+   },
+   {
+    "amount": 1,
+    "name": "Knoblauchzehe, fein gehackt"
+   },
+   {
+    "amount": 2,
+    "name": "Butter oder Öl",
+    "unit": "EL"
+   },
+   {
+    "amount": 150,
+    "name": "Gemüsebrühe",
+    "unit": "ml"
+   },
+   {
+    "amount": 200,
+    "name": "Sahne",
+    "unit": "ml"
+   },
+   {
+    "amount": 1,
+    "name": "Salz",
+    "unit": "TL"
+   },
+   {
+    "amount": 0.5,
+    "name": "Pfeffer",
+    "unit": "TL"
+   },
+   {
+    "amount": 1,
+    "name": "Muskatnuss, gerieben",
+    "unit": "Prise"
+   },
+   {
+    "amount": 40,
+    "name": "Parmesan, gerieben (optional)",
+    "unit": "g"
+   }
+  ],
+  "mains": [
+   "Reis"
+  ],
+  "notes": "Rote Bete passt roh nicht in die Pfanne (zu lange Garzeit, färbt die Soße rosa); vorgekochte Rote Bete als Würfel obendrauf geht gut. Passt auch: Champignons, Paprika, Spinat oder Erbsen. Für mehr Würze etwas Currypulver oder Senf in die Sahne.",
+  "servings": 4,
+  "steps": [
+   {
+    "minutes": 18,
+    "text": "Reis nach Packungsanweisung in Salzwasser garen.",
+    "title": "Reis aufsetzen"
+   },
+   {
+    "minutes": 5,
+    "text": "Währenddessen Butter oder Öl in einer großen Pfanne erhitzen. Kürbis und Möhren darin bei mittlerer Hitze anbraten.",
+    "title": "Gemüse anbraten"
+   },
+   {
+    "minutes": 2,
+    "text": "Porree und Knoblauch zugeben und 2 Minuten mitbraten.",
+    "title": "Porree dazu"
+   },
+   {
+    "minutes": 8,
+    "text": "Mit Gemüsebrühe ablöschen, Deckel drauf und köcheln lassen, bis der Kürbis weich ist.",
+    "title": "Köcheln lassen"
+   },
+   {
+    "minutes": 3,
+    "text": "Sahne einrühren und offen leicht einköcheln lassen, bis die Soße sämig ist. Mit Salz, Pfeffer und Muskat abschmecken, nach Wunsch Parmesan unterrühren.",
+    "title": "Sahne einrühren"
+   },
+   {
+    "text": "Die Sahnepfanne über den Reis geben oder den Reis direkt unterheben.",
+    "title": "Servieren"
+   }
+  ],
+  "tags": [
+   "vegetarisch",
+   "Herbst",
+   "Kürbis",
+   "Sahne"
+  ],
+  "time": 25,
+  "title": "Cremige Kürbis-Porree-Pfanne mit Reis",
+  "type": "Kochen"
+ },
+ {
+  "id": "palmkohl-gnocchi",
+  "added": "2026-10-24T17:22:00+02:00",
+  "category": "Pfannengericht",
+  "description": "Gebratene Gnocchi mit Palmkohl, Knoblauch, Zitrone und Parmesan.",
+  "emoji": "🥬",
+  "equipment": [
+   "Große Pfanne mit Deckel",
+   "Reibe"
+  ],
+  "ingredients": [
+   {
+    "amount": 500,
+    "name": "Gnocchi (Kühlregal)",
+    "unit": "g"
+   },
+   {
+    "amount": 250,
+    "name": "Palmkohl",
+    "unit": "g"
+   },
+   {
+    "amount": 2,
+    "name": "Knoblauchzehen, in Scheiben"
+   },
+   {
+    "amount": 1,
+    "name": "Zwiebel, fein gewürfelt"
+   },
+   {
+    "amount": 2,
+    "name": "Olivenöl",
+    "unit": "EL"
+   },
+   {
+    "amount": 1,
+    "name": "Butter",
+    "unit": "EL"
+   },
+   {
+    "amount": 60,
+    "name": "Gemüsebrühe oder Wasser",
+    "unit": "ml"
+   },
+   {
+    "amount": 0.25,
+    "name": "Chiliflocken",
+    "unit": "TL"
+   },
+   {
+    "amount": 0.5,
+    "name": "Zitrone, Abrieb und etwas Saft"
+   },
+   {
+    "amount": 40,
+    "name": "Parmesan, gerieben",
+    "unit": "g"
+   },
+   {
+    "amount": 2,
+    "name": "Pinienkerne (optional)",
+    "unit": "EL"
+   },
+   {
+    "amount": 0.5,
+    "name": "Salz",
+    "unit": "TL"
+   },
+   {
+    "amount": 0.25,
+    "name": "Pfeffer",
+    "unit": "TL"
+   }
+  ],
+  "mains": [
+   "Gnocchi"
+  ],
+  "notes": "Cremige Variante: zum Schluss einen Schuss Sahne oder 2 EL Frischkäse unterrühren. Passt auch: Pilze, getrocknete Tomaten, Speckwürfel oder Salsiccia.",
+  "servings": 2,
+  "steps": [
+   {
+    "text": "Vom Palmkohl die harten Mittelrippen herausschneiden, Blätter waschen und in Streifen schneiden.",
+    "title": "Palmkohl vorbereiten"
+   },
+   {
+    "minutes": 2,
+    "text": "Pinienkerne in einer großen Pfanne ohne Fett goldbraun rösten und herausnehmen.",
+    "title": "Pinienkerne rösten"
+   },
+   {
+    "minutes": 8,
+    "text": "Olivenöl in der Pfanne erhitzen, Gnocchi direkt aus der Packung (ohne Kochen) hineingeben und rundum goldbraun und knusprig braten. Herausnehmen.",
+    "title": "Gnocchi braten"
+   },
+   {
+    "minutes": 3,
+    "text": "Butter in die Pfanne geben, Zwiebel 2 Minuten anschwitzen, dann Knoblauch und Chiliflocken kurz mitbraten.",
+    "title": "Zwiebel & Knoblauch"
+   },
+   {
+    "minutes": 5,
+    "text": "Palmkohl zugeben, mit Brühe ablöschen und zugedeckt zusammenfallen lassen, bis er weich ist.",
+    "title": "Palmkohl dünsten"
+   },
+   {
+    "text": "Gnocchi zurück in die Pfanne geben, mit Zitrone, Salz und Pfeffer abschmecken. Mit Parmesan und Pinienkernen bestreut servieren.",
+    "title": "Fertigstellen"
+   }
+  ],
+  "tags": [
+   "vegetarisch",
+   "Winter",
+   "Palmkohl",
+   "Gnocchi"
+  ],
+  "time": 20,
+  "title": "Knusprige Gnocchi mit Palmkohl",
+  "type": "Kochen"
+ },
+ {
+  "id": "zimtschnecken",
+  "added": "2026-11-10T08:37:00+01:00",
+  "category": "Hefegebäck",
+  "description": "Saftige, fluffige Hefeschnecken mit Zimt-Butter-Füllung und einer dünnen Frischkäse-Glasur.",
+  "emoji": "🧁",
+  "equipment": [
+   "Kleiner Topf",
+   "Handrührgerät mit Knethaken & Rührbesen",
+   "Nudelholz",
+   "Runde Auflaufform Ø 30 cm"
+  ],
+  "ingredients": [
+   {
+    "amount": 270,
+    "group": "Teig",
+    "name": "Milch",
+    "unit": "ml"
+   },
+   {
+    "amount": 60,
+    "group": "Teig",
+    "name": "Butter",
+    "unit": "g"
+   },
+   {
+    "amount": 500,
+    "group": "Teig",
+    "name": "Weizenmehl",
+    "unit": "g"
+   },
+   {
+    "amount": 50,
+    "group": "Teig",
+    "name": "Zucker",
+    "unit": "g"
+   },
+   {
+    "amount": 1,
+    "group": "Teig",
+    "name": "Vanillinzucker",
+    "unit": "Pck."
+   },
+   {
+    "amount": 1,
+    "group": "Teig",
+    "name": "Salz",
+    "unit": "Prise"
+   },
+   {
+    "amount": 0.5,
+    "group": "Teig",
+    "name": "frische Hefe (ersatzweise 1 Pck. Trockenhefe)",
+    "unit": "Würfel"
+   },
+   {
+    "group": "Teig",
+    "name": "Butter für die Form, Mehl zum Ausrollen"
+   },
+   {
+    "amount": 100,
+    "group": "Füllung",
+    "name": "weiche Butter",
+    "unit": "g"
+   },
+   {
+    "amount": 70,
+    "group": "Füllung",
+    "name": "Zucker",
+    "unit": "g"
+   },
+   {
+    "amount": 2,
+    "amountMax": 3,
+    "group": "Füllung",
+    "name": "Zimt",
+    "unit": "TL"
+   },
+   {
+    "amount": 70,
+    "group": "Glasur",
+    "name": "Frischkäse",
+    "unit": "g"
+   },
+   {
+    "amount": 1,
+    "group": "Glasur",
+    "name": "weiche Butter",
+    "unit": "EL"
+   },
+   {
+    "amount": 1,
+    "group": "Glasur",
+    "name": "Puderzucker (gehäuft)",
+    "unit": "EL"
+   }
+  ],
+  "mains": [
+   "Hefeteig"
+  ],
+  "notes": "Ohne Frosting: einfach mit etwas Puderzucker bestäuben. Laut Quelle ca. 406 kcal pro Stück. Quelle: einfachbacken.de",
+  "oven": "180 °C (Umluft 160 °C) · 25 Min",
+  "servings": 10,
+  "servingsLabel": "Stück",
+  "source": "einfachbacken.de",
+  "sourceUrl": "https://www.einfachbacken.de/rezepte/zimtschnecken-einfach-selbstgemacht",
+  "steps": [
+   {
+    "minutes": 5,
+    "text": "Milch mit der Butter erwärmen, bis die Butter geschmolzen ist. Mehl, Zucker, Vanillinzucker und Salz mischen, die Hefe hineinbröckeln, lauwarme Milch dazugeben und mit den Knethaken zu einem glatten Teig verarbeiten.",
+    "title": "Teig kneten"
+   },
+   {
+    "minutes": 45,
+    "text": "Teig abgedeckt ruhen lassen. In der Zeit die runde Form einfetten.",
+    "title": "Gehen lassen"
+   },
+   {
+    "text": "Teig auf wenig Mehl kurz durchkneten und etwa 40 × 30 cm groß ausrollen. Weiche Butter cremig schlagen, Zucker und Zimt unterrühren. Die Zimt-Butter dünn aufstreichen, rundum etwa 1 cm frei lassen, dann von der langen Seite her aufrollen.",
+    "title": "Ausrollen und füllen"
+   },
+   {
+    "minutes": 30,
+    "text": "Rolle mit einem scharfen Messer in 10 Scheiben schneiden, nebeneinander in die Form setzen und abgedeckt ruhen lassen. Ofen auf 180 °C (Umluft 160 °C) vorheizen.",
+    "title": "Schneiden und nochmal gehen lassen"
+   },
+   {
+    "minutes": 25,
+    "text": "Etwa 25 Minuten backen, dann etwas abkühlen lassen.",
+    "title": "Backen"
+   },
+   {
+    "text": "Frischkäse, Butter und Puderzucker glatt rühren und dünn auf die noch lauwarmen Schnecken streichen. Am besten gleich servieren.",
+    "title": "Glasieren"
+   }
+  ],
+  "tags": [
+   "Zimt",
+   "Hefeteig",
+   "Cinnamon Rolls"
+  ],
+  "time": 145,
+  "title": "Zimtschnecken mit Frischkäse-Glasur",
+  "type": "Backen"
+ },
+ {
+  "id": "dan-dan-mian",
+  "added": "2026-11-10T08:48:00+01:00",
+  "category": "Pfannengericht",
+  "description": "Scharfe Sichuan-Nudeln mit Sesam-Chili-Sauce, knusprigem Hackfleisch, Ya Cai und Pak Choi.",
+  "emoji": "🍜",
+  "equipment": [
+   "Kochtopf",
+   "Pfanne oder Wok",
+   "Sieb",
+   "Servierschalen"
+  ],
+  "ingredients": [
+   {
+    "amount": 4,
+    "group": "Sauce",
+    "name": "Sesampaste (oder Tahini)",
+    "unit": "EL"
+   },
+   {
+    "amount": 3,
+    "group": "Sauce",
+    "name": "Sojasauce",
+    "unit": "EL"
+   },
+   {
+    "amount": 1,
+    "group": "Sauce",
+    "name": "dunkle Sojasauce (oder süße Sojasauce)",
+    "unit": "EL"
+   },
+   {
+    "amount": 4,
+    "group": "Sauce",
+    "name": "Chiliöl (oder Chili-Knoblauch-Öl)",
+    "unit": "EL"
+   },
+   {
+    "amount": 1,
+    "amountMax": 2,
+    "group": "Sauce",
+    "name": "Sichuan-Pfeffer, gemahlen",
+    "unit": "TL"
+   },
+   {
+    "amount": 2,
+    "group": "Sauce",
+    "name": "Zucker",
+    "unit": "TL"
+   },
+   {
+    "amount": 50,
+    "group": "Hackfleisch",
+    "name": "Ya Cai (eingelegte Senfblätter; ersatzweise Kimchi)",
+    "unit": "g"
+   },
+   {
+    "amount": 1,
+    "group": "Hackfleisch",
+    "name": "Ingwer (ca. 4 cm)",
+    "unit": "Stück"
+   },
+   {
+    "amount": 2,
+    "group": "Hackfleisch",
+    "name": "Knoblauchzehen"
+   },
+   {
+    "amount": 3,
+    "group": "Hackfleisch",
+    "name": "Frühlingszwiebeln"
+   },
+   {
+    "amount": 2,
+    "group": "Hackfleisch",
+    "name": "Erdnussöl",
+    "unit": "EL"
+   },
+   {
+    "amount": 300,
+    "group": "Hackfleisch",
+    "name": "Schweinehack (oder Rind/Huhn)",
+    "unit": "g"
+   },
+   {
+    "amount": 2,
+    "group": "Hackfleisch",
+    "name": "Reiswein (oder Sherry)",
+    "unit": "EL"
+   },
+   {
+    "amount": 1,
+    "group": "Hackfleisch",
+    "name": "Sojasauce",
+    "unit": "EL"
+   },
+   {
+    "amount": 1,
+    "group": "Hackfleisch",
+    "name": "Hoisinsauce",
+    "unit": "EL"
+   },
+   {
+    "amount": 400,
+    "group": "Nudeln & Topping",
+    "name": "asiatische Weizennudeln (z. B. Mie) – alternativ Glasnudeln",
+    "unit": "g"
+   },
+   {
+    "amount": 1,
+    "group": "Nudeln & Topping",
+    "name": "Salz",
+    "unit": "Prise"
+   },
+   {
+    "amount": 300,
+    "group": "Nudeln & Topping",
+    "name": "Pak Choi (oder 200 g Blattspinat)",
+    "unit": "g"
+   },
+   {
+    "amount": 40,
+    "group": "Nudeln & Topping",
+    "name": "geröstete Erdnüsse, gehackt",
+    "unit": "g"
+   },
+   {
+    "group": "Nudeln & Topping",
+    "name": "Chiliöl oder Sesamöl zum Beträufeln"
+   }
+  ],
+  "mains": [
+   "Nudeln",
+   "Glasnudeln"
+  ],
+  "notes": "Mit Glasnudeln: etwa 250 g für 4 Portionen reichen, da sie stark aufquellen. Nicht kochen, sondern nach Packungsangabe in heißem Wasser einweichen (meist 3–5 Min.), abgießen und nach Belieben mit der Küchenschere kürzer schneiden; den Pak Choi dann kurz separat blanchieren. Mengen von Claude ergänzt, weil sie auf der Originalseite nicht lesbar waren – nach Geschmack anpassen, vor allem Chiliöl und Sichuan-Pfeffer. Vegetarisch/vegan: Hack durch zerbröselten Räuchertofu oder gehackte Shiitake ersetzen. Wärmer im Geschmack mit ½ TL Zimt oder einer Prise Fünf-Gewürze-Pulver im Hack. Chiliöl selbst machen: 250 ml neutrales Öl mit 2 EL Sichuan-Pfeffer, 1 Zimtstange, 1 Sternanis, Ingwer und Knoblauch ca. 10 Min. sanft erhitzen (nicht rauchen lassen), über 4 EL Chiliflocken (optional 2 EL Sesam) in ein Glas gießen; hält gekühlt ca. 2 Wochen. Quelle: essen-und-trinken.de",
+  "servings": 4,
+  "source": "essen-und-trinken.de",
+  "sourceUrl": "https://www.essen-und-trinken.de/rezepte/dan-dan-mian-rezept-fuer-scharfe-nudeln-aus-sichuan-13394738.html",
+  "steps": [
+   {
+    "text": "Alle Zutaten für die Sauce in einer Schüssel glatt verrühren und beiseitestellen.",
+    "title": "Sauce anrühren"
+   },
+   {
+    "text": "Ya Cai im Sieb abspülen, damit es weniger salzig ist, und fein hacken. Ingwer und Knoblauch fein hacken, Frühlingszwiebeln in Ringe schneiden. Die Hälfte der Frühlingszwiebeln fürs Topping zurücklegen.",
+    "title": "Vorbereiten"
+   },
+   {
+    "minutes": 1,
+    "text": "Öl in der Pfanne erhitzen, Ingwer, Knoblauch und die Hälfte der Frühlingszwiebeln kurz anbraten.",
+    "title": "Aromaten anbraten"
+   },
+   {
+    "minutes": 8,
+    "text": "Hack zugeben und kurz anbraten, dann Ya Cai dazugeben und alles goldbraun und krümelig braten.",
+    "title": "Hack knusprig braten"
+   },
+   {
+    "minutes": 2,
+    "text": "Reiswein, Sojasauce und Hoisinsauce zugeben und weiterbraten, bis keine Flüssigkeit mehr in der Pfanne ist.",
+    "title": "Ablöschen"
+   },
+   {
+    "text": "Nudeln in Salzwasser nach Packungsangabe bissfest kochen. Pak Choi in Stücke schneiden und in den letzten 1–2 Minuten mit ins Nudelwasser geben. Abgießen.",
+    "title": "Nudeln & Pak Choi"
+   },
+   {
+    "text": "Sauce auf die Schalen verteilen, Nudeln und Pak Choi darauf geben, Hack und restliche Frühlingszwiebeln darüber. Mit Erdnüssen bestreuen, mit Chili- oder Sesamöl beträufeln und am Tisch gut durchmischen.",
+    "title": "Anrichten"
+   }
+  ],
+  "tags": [
+   "asiatisch",
+   "Sichuan",
+   "scharf",
+   "Hackfleisch",
+   "Pak Choi"
+  ],
+  "time": 30,
+  "title": "Dan Dan Mian",
+  "type": "Kochen"
+ },
+ {
+  "id": "ahorn-zimtschnecken",
+  "added": "2026-11-10T08:55:00+01:00",
+  "category": "Hefegebäck",
+  "description": "Fluffige Zimtschnecken, gesüßt mit Ahornsirup, mit einem Hauch Kardamom und Ahorn-Frischkäse-Frosting.",
+  "emoji": "🧁",
+  "equipment": [
+   "Handrührgerät mit Rührbesen",
+   "Nudelholz",
+   "Backform ca. 20 × 20 cm",
+   "Backpapier"
+  ],
+  "ingredients": [
+   {
+    "amount": 0.5,
+    "group": "Teig",
+    "name": "frische Hefe (21 g)",
+    "unit": "Würfel"
+   },
+   {
+    "amount": 125,
+    "group": "Teig",
+    "name": "lauwarmes Wasser",
+    "unit": "ml"
+   },
+   {
+    "amount": 3,
+    "group": "Teig",
+    "name": "Ahornsirup",
+    "unit": "EL"
+   },
+   {
+    "amount": 40,
+    "group": "Teig",
+    "name": "Butter, zimmerwarm",
+    "unit": "g"
+   },
+   {
+    "amount": 1,
+    "group": "Teig",
+    "name": "Eigelb"
+   },
+   {
+    "amount": 350,
+    "group": "Teig",
+    "name": "Mehl",
+    "unit": "g"
+   },
+   {
+    "amount": 1,
+    "group": "Teig",
+    "name": "Salz",
+    "unit": "Prise"
+   },
+   {
+    "group": "Teig",
+    "name": "Mehl zum Ausrollen"
+   },
+   {
+    "amount": 30,
+    "group": "Füllung",
+    "name": "Butter, zimmerwarm",
+    "unit": "g"
+   },
+   {
+    "amount": 2,
+    "group": "Füllung",
+    "name": "Ahornsirup",
+    "unit": "EL"
+   },
+   {
+    "amount": 1,
+    "amountMax": 2,
+    "group": "Füllung",
+    "name": "Zimt",
+    "unit": "TL"
+   },
+   {
+    "amount": 1,
+    "group": "Füllung",
+    "name": "Kardamom",
+    "unit": "Prise"
+   },
+   {
+    "amount": 75,
+    "group": "Frosting",
+    "name": "Doppelrahmfrischkäse",
+    "unit": "g"
+   },
+   {
+    "amount": 10,
+    "group": "Frosting",
+    "name": "Butter, zimmerwarm",
+    "unit": "g"
+   },
+   {
+    "amount": 2,
+    "group": "Frosting",
+    "name": "Ahornsirup",
+    "unit": "EL"
+   }
+  ],
+  "mains": [
+   "Hefeteig"
+  ],
+  "notes": "Die Seite nennt 1 Std. 10 Min. Gesamtzeit – mit Gehzeit, Kneten und Backen sind realistisch eher 2 Stunden. Die Formgröße ist im Original nicht angegeben; für 9 Schnecken passt eine Form von etwa 20 × 20 cm. Im Vergleich zu den klassischen Zimtschnecken ohne Zucker, nur mit Ahornsirup gesüßt, und mit Ei im Teig. Laut Quelle ca. 270 kcal pro Stück. Quelle: ahornsirup-kanada.de (Rezept von @shelovesfruit)",
+  "oven": "175 °C (Umluft 150 °C) · 20–25 Min",
+  "servings": 9,
+  "servingsLabel": "Stück",
+  "source": "ahornsirup-kanada.de (Rezept von @shelovesfruit)",
+  "sourceUrl": "https://www.ahornsirup-kanada.de/rezepte/ahorn-zimtschnecken/",
+  "steps": [
+   {
+    "minutes": 10,
+    "text": "Hefe in eine Schüssel bröckeln, mit dem lauwarmen Wasser und dem Ahornsirup verrühren und stehen lassen, bis sie leicht schäumt.",
+    "title": "Hefe ansetzen"
+   },
+   {
+    "text": "Butter, Eigelb, gut die Hälfte des Mehls (ca. 200 g) und Salz unterkneten. Dann von Hand weiterkneten und das restliche Mehl nach und nach einarbeiten, bis ein glatter Teig entsteht.",
+    "title": "Teig kneten"
+   },
+   {
+    "minutes": 60,
+    "text": "Teig abgedeckt an einem warmen Ort gehen lassen.",
+    "title": "Gehen lassen"
+   },
+   {
+    "text": "Butter, Ahornsirup, Zimt und Kardamom zu einer streichfähigen Creme verrühren. Separat Frischkäse, Butter und Ahornsirup glatt rühren. Beides kühl stellen. Ofen auf 175 °C (Umluft 150 °C) vorheizen.",
+    "title": "Füllung & Frosting"
+   },
+   {
+    "text": "Teig auf wenig Mehl zu einem Rechteck von etwa 25 × 30 cm ausrollen, mit der Füllung bestreichen und von der langen Seite her aufrollen. In 9 gleich dicke Scheiben schneiden und mit der Schnittfläche nach oben in die mit Backpapier ausgelegte Form setzen.",
+    "title": "Rollen und schneiden"
+   },
+   {
+    "minutes": 25,
+    "text": "20–25 Minuten goldbraun backen.",
+    "title": "Backen"
+   },
+   {
+    "text": "Die Schnecken etwas abkühlen lassen und mit dem Ahorn-Frosting bestreichen.",
+    "title": "Frosting auftragen"
+   }
+  ],
+  "tags": [
+   "Zimt",
+   "Ahornsirup",
+   "Kardamom",
+   "Hefeteig",
+   "Cinnamon Rolls"
+  ],
+  "time": 120,
+  "title": "Ahorn-Zimtschnecken",
+  "type": "Backen"
+ },
+ {
+  "id": "new-york-cheesecake",
+  "added": "2026-11-10T09:03:00+01:00",
+  "category": "Kuchen",
+  "description": "Dichter, sehr cremiger Cheesecake nach Lindy's Art mit knusprigem Keksboden, Vanille und Zitrone.",
+  "emoji": "🎂",
+  "equipment": [
+   "Springform Ø 24 cm",
+   "Gefrierbeutel & Nudelholz",
+   "Handrührgerät oder Schneebesen"
+  ],
+  "hideServings": true,
+  "ingredients": [
+   {
+    "amount": 125,
+    "group": "Boden",
+    "name": "Graham Crackers oder Butterkekse",
+    "unit": "g"
+   },
+   {
+    "amount": 80,
+    "group": "Boden",
+    "name": "Butter, geschmolzen",
+    "unit": "g"
+   },
+   {
+    "amount": 50,
+    "group": "Boden",
+    "name": "Zucker",
+    "unit": "g"
+   },
+   {
+    "amount": 6,
+    "group": "Füllung",
+    "name": "Eier (Gr. M), zimmerwarm"
+   },
+   {
+    "amount": 300,
+    "group": "Füllung",
+    "name": "Zucker",
+    "unit": "g"
+   },
+   {
+    "amount": 900,
+    "group": "Füllung",
+    "name": "Frischkäse, zimmerwarm",
+    "unit": "g"
+   },
+   {
+    "amount": 250,
+    "group": "Füllung",
+    "name": "Sour Cream (ersatzweise Schmand), zimmerwarm",
+    "unit": "ml"
+   },
+   {
+    "amount": 250,
+    "group": "Füllung",
+    "name": "Schlagsahne, zimmerwarm",
+    "unit": "ml"
+   },
+   {
+    "amount": 1,
+    "group": "Füllung",
+    "name": "Zitrone, Saft"
+   },
+   {
+    "amount": 1,
+    "group": "Füllung",
+    "name": "Vanilleextrakt",
+    "unit": "EL"
+   },
+   {
+    "amount": 2,
+    "group": "Füllung",
+    "name": "Mehl (gehäuft)",
+    "unit": "EL"
+   }
+  ],
+  "mains": [
+   "Frischkäse"
+  ],
+  "notes": "Am besten am Vortag backen. Alle Zutaten für die Füllung zimmerwarm verwenden, dann wird sie glatt und klumpenfrei. Gegen Risse: nicht zu lange oder zu schnell rühren (zur Not mit Schneebesen oder Holzlöffel), und wenn er trotzdem reißt, beim nächsten Mal 10 °C weniger oder 10 Minuten kürzer backen – viele Öfen heizen stärker als angezeigt. Zum Schneiden das Messer vor jedem Schnitt in warmes Wasser tauchen und abwischen. Sehr gehaltvoll, also lieber kleine Stücke schneiden. Quelle: chefkoch.de",
+  "oven": "220 °C 15 Min, dann 135 °C 60 Min (Ober-/Unterhitze)",
+  "servings": 16,
+  "servingsLabel": "Stück",
+  "source": "chefkoch.de (sukeyhamburg17)",
+  "sourceUrl": "https://www.chefkoch.de/rezepte/2344541372996453/Amerikanischer-New-York-Cheesecake-so-wie-der-beruehmte-Lindy-s.html",
+  "steps": [
+   {
+    "minutes": 15,
+    "text": "Kekse im verschlossenen Gefrierbeutel mit dem Nudelholz fein zerbröseln, mit geschmolzener Butter und Zucker mischen. In die Springform geben, mit Fingern oder Löffelrücken fest andrücken und kühl stellen.",
+    "title": "Keksboden"
+   },
+   {
+    "text": "Eier, Zucker, Frischkäse, Sour Cream, Sahne, Zitronensaft, Vanille und Mehl nur auf mittlerer Stufe und nur kurz glatt rühren. Zu viel Luft in der Masse lässt sie aufgehen, überlaufen und später reißen. Ofen auf 220 °C Ober-/Unterhitze vorheizen.",
+    "title": "Füllung rühren"
+   },
+   {
+    "minutes": 10,
+    "text": "Masse über einen Löffelrücken auf den Boden gießen, damit er nicht aufreißt. 5–10 Minuten stehen lassen.",
+    "title": "Einfüllen"
+   },
+   {
+    "minutes": 15,
+    "text": "Bei 220 °C backen.",
+    "title": "Heiß anbacken"
+   },
+   {
+    "minutes": 60,
+    "text": "Temperatur auf 135 °C herunterschalten und weiterbacken.",
+    "title": "Langsam backen"
+   },
+   {
+    "minutes": 120,
+    "text": "Ofen ausschalten und die Tür unbedingt geschlossen lassen. Kurz vor Ende prüfen, ob der Rand noch an der Form klebt, und ihn ggf. mit einem Messer lösen.",
+    "title": "Im Ofen abkühlen"
+   },
+   {
+    "minutes": 480,
+    "text": "Cheesecake mindestens 8 Stunden, am besten über Nacht, im Kühlschrank fest werden lassen.",
+    "title": "Durchkühlen"
+   }
+  ],
+  "tags": [
+   "Käsekuchen",
+   "amerikanisch",
+   "Keksboden",
+   "über Nacht"
+  ],
+  "time": 695,
+  "title": "New York Cheesecake",
+  "type": "Backen"
+ },
+ {
+  "id": "kuerbis-orangen-suppe",
+  "added": "2026-11-10T09:15:00+01:00",
+  "category": "Suppe",
+  "description": "Fruchtig-scharfe Kürbissuppe mit Karotten, Orangensaft, Ingwer und Curry, mit Sahne verfeinert.",
+  "emoji": "🥣",
+  "equipment": [
+   "Großer Topf",
+   "Pürierstab"
+  ],
+  "ingredients": [
+   {
+    "amount": 750,
+    "name": "Kürbis",
+    "unit": "g"
+   },
+   {
+    "amount": 140,
+    "name": "Zwiebeln",
+    "unit": "g"
+   },
+   {
+    "amount": 200,
+    "name": "Karotten",
+    "unit": "g"
+   },
+   {
+    "amount": 10,
+    "name": "Ingwer",
+    "unit": "g"
+   },
+   {
+    "amount": 50,
+    "name": "Olivenöl",
+    "unit": "g"
+   },
+   {
+    "amount": 300,
+    "name": "Orangensaft",
+    "unit": "ml"
+   },
+   {
+    "amount": 250,
+    "name": "Gemüsebrühe",
+    "unit": "ml"
+   },
+   {
+    "amount": 1.5,
+    "name": "Salz",
+    "unit": "TL"
+   },
+   {
+    "amount": 1,
+    "name": "Currypulver",
+    "unit": "EL"
+   },
+   {
+    "name": "Pfeffer"
+   },
+   {
+    "name": "Chili, nach Geschmack"
+   },
+   {
+    "amount": 100,
+    "name": "Sahne",
+    "unit": "ml"
+   }
+  ],
+  "mains": [
+   "Kürbis"
+  ],
+  "notes": "Nicht den ganzen Orangensaft auf einmal nehmen – erst probieren, sonst wird die Suppe schnell sehr fruchtig. Hokkaido muss nicht geschält werden. Variante aus Cookidoo (Kürbis-Orangen-Suppe mit Ingwer, für Thermomix) nutzt zusätzlich Knoblauch und frische rote Chili und würzt mit Muskat statt Curry.",
+  "servings": 4,
+  "steps": [
+   {
+    "text": "Zwiebeln und Ingwer sehr fein hacken, Karotten und Kürbis würfeln. Mit einer Küchenmaschine geraspelt geht es schneller und das Gemüse gart kürzer.",
+    "title": "Schneiden"
+   },
+   {
+    "text": "Zwiebeln und Ingwer im Olivenöl dünsten. Karotten und Kürbis zugeben, mit der Gemüsebrühe und erst einmal etwa ⅔ des Orangensafts aufgießen. Mit Salz, Curry, Pfeffer und nach Wunsch Chili würzen.",
+    "title": "Anschwitzen"
+   },
+   {
+    "minutes": 20,
+    "text": "Kochen lassen, bis das Gemüse weich ist.",
+    "title": "Köcheln"
+   },
+   {
+    "text": "Suppe fein pürieren und abschmecken. Restlichen Orangensaft nur nach Geschmack zugeben, falls sie fruchtiger sein soll. Zum Schluss die Sahne einrühren.",
+    "title": "Pürieren"
+   }
+  ],
+  "tags": [
+   "Suppe",
+   "vegetarisch",
+   "Herbst",
+   "Orange",
+   "Curry"
+  ],
+  "time": 60,
+  "title": "Kürbis-Orangen-Suppe mit Ingwer",
+  "type": "Kochen"
+ },
+ {
+  "id": "sichuan-chilioel",
+  "added": "2026-11-10T09:32:00+01:00",
+  "category": "Öle & Würze",
+  "description": "Aromatisches Chiliöl mit Sichuan-Pfeffer, Zimt und Sternanis – für Dan Dan Mian, Nudeln, Dumplings und Eier.",
+  "emoji": "🌶️",
+  "equipment": [
+   "Kleiner Topf",
+   "Hitzefestes Schraubglas",
+   "Feines Sieb"
+  ],
+  "hideServings": true,
+  "ingredients": [
+   {
+    "amount": 250,
+    "group": "Aromenöl",
+    "name": "neutrales Öl (z. B. Raps- oder Erdnussöl)",
+    "unit": "ml"
+   },
+   {
+    "amount": 2,
+    "group": "Aromenöl",
+    "name": "Sichuan-Pfefferkörner",
+    "unit": "EL"
+   },
+   {
+    "amount": 1,
+    "group": "Aromenöl",
+    "name": "Zimtstange"
+   },
+   {
+    "amount": 1,
+    "group": "Aromenöl",
+    "name": "Sternanis"
+   },
+   {
+    "amount": 3,
+    "group": "Aromenöl",
+    "name": "Ingwer, in Scheiben",
+    "unit": "cm"
+   },
+   {
+    "amount": 2,
+    "group": "Aromenöl",
+    "name": "Knoblauchzehen, angedrückt"
+   },
+   {
+    "amount": 4,
+    "group": "Im Glas",
+    "name": "Chiliflocken",
+    "unit": "EL"
+   },
+   {
+    "amount": 2,
+    "group": "Im Glas",
+    "name": "Sesam (optional)",
+    "unit": "EL"
+   },
+   {
+    "amount": 0.5,
+    "group": "Im Glas",
+    "name": "Salz",
+    "unit": "TL"
+   }
+  ],
+  "mains": [
+   "Chili"
+  ],
+  "notes": "Hält im Kühlschrank ca. 2 Wochen. Weitere Aromen fürs Öl: Nelken, Piment, Lorbeer, Frühlingszwiebeln oder getrocknete Chilischoten. Passt zu: Dan Dan Mian, Nudeln, Dumplings, Spiegelei, Reis. Basis: Tipp aus dem Dan-Dan-Mian-Rezept von essen-und-trinken.de, von Claude ausformuliert.",
+  "servings": 1,
+  "steps": [
+   {
+    "text": "Chiliflocken, Sesam und Salz in das hitzefeste Glas geben.",
+    "title": "Glas vorbereiten"
+   },
+   {
+    "minutes": 10,
+    "text": "Öl mit Sichuan-Pfeffer, Zimt, Sternanis, Ingwer und Knoblauch im Topf bei mittlerer Hitze sanft erhitzen, bis es duftet und der Knoblauch hellgolden ist. Das Öl darf nicht rauchen.",
+    "title": "Öl aromatisieren"
+   },
+   {
+    "text": "Das heiße Öl durch das Sieb über die Chiliflocken gießen – es zischt und schäumt kurz auf. Einmal umrühren.",
+    "title": "Übergießen"
+   },
+   {
+    "minutes": 20,
+    "text": "Offen abkühlen lassen, dann verschließen und kühl lagern.",
+    "title": "Abkühlen"
+   }
+  ],
+  "tags": [
+   "scharf",
+   "Sichuan",
+   "asiatisch",
+   "Vorrat"
+  ],
+  "time": 30,
+  "title": "Sichuan-Chiliöl",
+  "type": "Grundrezepte",
+  "yield": "ca. 300 ml"
+ },
+ {
+  "id": "honig-senf-dressing",
+  "added": "2026-11-10T09:33:00+01:00",
+  "category": "Saucen & Dressings",
+  "description": "Schnelles, mildes Salatdressing mit Senf und Honig oder Ahornsirup.",
+  "emoji": "🥗",
+  "equipment": [],
+  "hideServings": true,
+  "ingredients": [
+   {
+    "amount": 1,
+    "name": "Senf",
+    "unit": "TL"
+   },
+   {
+    "amount": 1,
+    "name": "Honig oder Ahornsirup",
+    "unit": "EL"
+   },
+   {
+    "amount": 1,
+    "name": "Salz",
+    "unit": "Prise"
+   },
+   {
+    "amount": 1,
+    "name": "Pfeffer",
+    "unit": "Prise"
+   },
+   {
+    "amount": 2,
+    "name": "Olivenöl",
+    "unit": "EL"
+   },
+   {
+    "amount": 1,
+    "name": "Wasser",
+    "unit": "EL"
+   }
+  ],
+  "mains": [
+   "Senf"
+  ],
+  "notes": "Mit Ahornsirup vegan.",
+  "servings": 1,
+  "steps": [
+   {
+    "text": "Senf, Honig bzw. Ahornsirup, Salz und Pfeffer verrühren.",
+    "title": "Verrühren"
+   },
+   {
+    "text": "Olivenöl und Wasser zugeben und kräftig verquirlen, bis das Dressing leicht cremig ist. Erst kurz vor dem Servieren über den Salat geben.",
+    "title": "Emulgieren"
+   }
+  ],
+  "tags": [
+   "Salat",
+   "Dressing",
+   "schnell",
+   "vegetarisch"
+  ],
+  "time": 2,
+  "title": "Honig-Senf-Dressing",
+  "type": "Grundrezepte",
+  "yield": "1 Schale Salat"
+ }
+]
