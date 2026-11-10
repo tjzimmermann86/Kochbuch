@@ -157,7 +157,7 @@ textarea, .field { width: 100%; padding: 11px 12px; border-radius: 10px; border:
 .addrow { display: grid; grid-template-columns: minmax(0, 1fr) 76px 82px; gap: 8px; margin: 12px 0 16px; }
 .addrow .wide { grid-column: 1 / -1; }
 .addrow .btn { grid-column: 1 / -1; }
-.addrow input, .addrow select, .pantrylist input, .pantrylist select { width: 100%; padding: 10px; border-radius: 10px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); min-width: 0; font-size: 1rem; }
+.addrow input, .addrow select, .pedit input, .pedit select { width: 100%; padding: 10px; border-radius: 10px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); min-width: 0; font-size: 1rem; }
 .shoplist label { display: flex; align-items: baseline; gap: 12px; padding: 13px 0; }
 .shoplist .amt { flex: none; min-width: 3.5em; text-align: left; }
 .shoplist .nm { min-width: 0; }
@@ -165,15 +165,17 @@ textarea, .field { width: 100%; padding: 11px 12px; border-radius: 10px; border:
 .shoplist li.done .nm, .shoplist li.done .amt { color: var(--muted); text-decoration: line-through; }
 .actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
 .actions .btn { flex: 1 1 140px; }
-.pantrylist { display: flex; flex-direction: column; gap: 8px; }
-.pantrylist li { padding: 12px; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px 10px; align-items: center; }
-.pantrylist .nm { font-weight: 600; }
-.pantrylist .row2 { grid-column: 1 / -1; display: grid; grid-template-columns: 80px 82px minmax(0, 1fr); gap: 8px; }
-.pantrylist .row3 { display: flex; justify-content: flex-end; gap: 14px; }
-.pantrylist .nm .mhd { margin-left: 6px; vertical-align: 1px; }
-.xbtn { border: 0; background: transparent; color: var(--muted); width: 32px; height: 32px; border-radius: 8px; font-size: 1rem; cursor: pointer; }
-.pantrylist li { padding: 10px 12px; gap: 6px 10px; }
-.pantrylist .row2 input, .pantrylist .row2 select { padding: 7px 8px; font-size: .95rem; }
+.pantrylist { display: flex; flex-direction: column; border-top: 1px solid var(--line); }
+.pantrylist li { border-bottom: 1px solid var(--line); }
+.prow { width: 100%; display: flex; align-items: center; gap: 10px; padding: 12px 2px; border: 0; background: transparent; text-align: left; cursor: pointer; font-size: 1rem; }
+.prow .nm { flex: 1; min-width: 0; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.prow .pq { flex: none; font-family: var(--font-mono); font-size: .86rem; color: var(--muted); }
+.prow .mhd { flex: none; }
+.pantrylist li.open { background: var(--surface); border-radius: 12px; border-bottom-color: transparent; padding: 0 10px 10px; margin: 4px 0; box-shadow: 0 0 0 1px var(--line); }
+.pedit { display: grid; grid-template-columns: 80px 82px minmax(0, 1fr); gap: 8px; }
+.pedit .pdel { grid-column: 1 / -1; display: flex; justify-content: flex-end; gap: 14px; }
+.pedit input, .pedit select { padding: 8px; font-size: .95rem; }
+.mhd { margin-left: 6px; vertical-align: 1px; }
 .mhd { font-size: .75rem; font-weight: 600; padding: 2px 8px; border-radius: 999px; white-space: nowrap; }
 .mhd.ok { background: var(--accent-soft); color: var(--accent-ink); }
 .mhd.warn { background: var(--beet); color: var(--surface); }

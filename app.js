@@ -21,7 +21,7 @@
   const ui = {
     tab: "rezepte", current: null, kind: store.get("kb-kind", "Kochen"), filter: "Alle", main: "Alle", query: "",
     servings: null, cookStage: false, msg: "", draft: "", rating: 0, confirm: null, delStage: 0, clearStage: false,
-    loginErr: "",
+    loginErr: "", editPantry: null,
   };
   if (!KINDS.includes(ui.kind)) ui.kind = "Kochen";
   const kindOf = (r) => KINDS.includes(r.type) ? r.type : "Kochen";
@@ -343,15 +343,21 @@
         <input id="pa-best" class="wide" type="date" aria-label="Mindesthaltbarkeitsdatum">
         <button class="btn" type="submit">Speichern</button>
       </form>
-      <ul class="pantrylist">${items.map(p => `
-        <li><span class="nm">${esc(p.name)} ${bestChip(p.best)}</span>
-          <span class="row3">${ui.confirm === p.id ? `<button type="button" class="link" data-act="p-cancel">Abbrechen</button><button type="button" class="link danger" data-pdel="${esc(p.id)}">Löschen</button>` : `<button type="button" class="xbtn" data-pask="${esc(p.id)}" aria-label="${esc(p.name)} entfernen">✕</button>`}</span>
-          <span class="row2">
-            <input type="number" step="any" min="0" inputmode="decimal" value="${p.amount ?? ""}" data-pamt="${esc(p.id)}" placeholder="da" aria-label="Menge ${esc(p.name)}">
+      <ul class="pantrylist">${items.map(p => {
+        const open = ui.editPantry === p.id;
+        return `<li class="${open ? "open" : ""}">
+          <button type="button" class="prow" data-pedit="${esc(p.id)}" aria-expanded="${open}">
+            <span class="nm">${esc(p.name)}</span>
+            <span class="pq">${p.amount != null && p.amount !== "" ? fmtAmount(p.amount, p.unit) : "da"}</span>
+            ${bestChip(p.best)}
+          </button>
+          ${open ? `<div class="pedit">
+            <input type="number" step="any" min="0" inputmode="decimal" value="${p.amount ?? ""}" data-pamt="${esc(p.id)}" placeholder="Menge" aria-label="Menge ${esc(p.name)}">
             ${unitSelect(`data-punit="${esc(p.id)}"`, p.unit)}
             <input type="date" value="${esc(p.best || "")}" data-pbest="${esc(p.id)}" aria-label="MHD ${esc(p.name)}">
-          </span>
-        </li>`).join("")}
+            <span class="pdel">${ui.confirm === p.id ? `<button type="button" class="link" data-act="p-cancel">Abbrechen</button><button type="button" class="link danger" data-pdel="${esc(p.id)}">Löschen</button>` : `<button type="button" class="link" data-pask="${esc(p.id)}">Entfernen</button>`}</span>
+          </div>` : ""}
+        </li>`; }).join("")}
       </ul>
       ${!items.length ? `<p class="empty">Noch nichts im Vorrat.</p>` : ""}
       <p class="msg">${esc(ui.msg)}</p>
@@ -455,6 +461,7 @@
     if (d.star) { const n = Number(d.star); ui.rating = ui.rating === n ? 0 : n; return render(); }
     if (d.cask) { ui.confirm = d.cask; return render(); }
     if (d.cdel) { op("comments", "del", d.cdel); ui.confirm = null; return render(); }
+    if (d.pedit) { ui.editPantry = ui.editPantry === d.pedit ? null : d.pedit; ui.confirm = null; return render(); }
     if (d.pask) { ui.confirm = d.pask; return render(); }
     if (d.pdel) { op("pantry", "del", d.pdel); ui.confirm = null; return render(); }
     switch (act) {
