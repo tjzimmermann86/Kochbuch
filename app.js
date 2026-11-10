@@ -378,7 +378,7 @@
     const active = document.activeElement;
     const keepFocus = active && active.id && ["q", "ctext", "sa-name", "pa-name"].includes(active.id) ? active.id : null;
     const onList = !r && ui.tab === "rezepte";
-    const seg = `<div class="seg" role="group" aria-label="Rezeptart">${KINDS.map(k => `<button type="button" data-kind="${k}" aria-pressed="${onList && k === ui.kind}">${k}</button>`).join("")}</div>`;
+    const seg = `<div class="seg${!r && ui.tab !== "rezepte" ? " in-tool" : ""}" role="group" aria-label="Rezeptart">${KINDS.map(k => `<button type="button" data-kind="${k}" aria-pressed="${onList && k === ui.kind}">${k}</button>`).join("")}</div>`;
     $("view").innerHTML = seg + (r ? renderDetail(r) : ui.tab === "einkauf" ? renderShop() : ui.tab === "vorrat" ? renderPantry() : renderList());
     if (keepFocus && $(keepFocus)) { const el = $(keepFocus); el.focus(); try { el.setSelectionRange(el.value.length, el.value.length); } catch {} }
     badges(); syncLabel();
