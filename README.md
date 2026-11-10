@@ -18,7 +18,7 @@ Rezepte sind ohne Anmeldung sichtbar. Alles Persönliche liegt hinter dem Login.
 ## Einrichtung auf Vercel
 
 1. **Projekt anlegen:** Vercel → *Add New… → Project* → dieses Repo importieren → *Deploy*. Keine Build-Einstellungen nötig.
-2. **Datenbank verbinden:** Im neuen Projekt → *Storage* → die bestehende **Upstash-for-Redis**-Datenbank (die von garage-games) auswählen → *Connect Project*. Vercel setzt `KV_REST_API_URL` und `KV_REST_API_TOKEN` automatisch. Die Daten des Kochbuchs liegen getrennt unter `kochbuch:…`.
+2. **Datenbank verbinden:** Im neuen Projekt → *Storage* → die bestehende **Upstash-for-Redis**-Datenbank (die von game-night) auswählen → *Connect Project*. Vercel setzt `KV_REST_API_URL` und `KV_REST_API_TOKEN` automatisch. Die Daten des Kochbuchs liegen getrennt unter `kochbuch:…`.
 3. **Passwort festlegen** (Projekt → *Settings → Environment Variables*): `APP_PASSWORD` mit deinem Kochbuch-Passwort anlegen, für Production und Preview, gern als *Sensitive*.
 4. **Neu deployen** (*Deployments → … → Redeploy*), damit die Variable greift.
 5. **Deployment-Schutz:** Unter *Settings → Deployment Protection* die Vercel-Authentifizierung auf „Only Preview Deployments“ stellen, sonst verlangt die Hauptadresse einen Vercel-Login.
