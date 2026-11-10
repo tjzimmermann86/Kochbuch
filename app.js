@@ -507,7 +507,7 @@
   if (savedTheme === "dark" || savedTheme === "light") document.documentElement.setAttribute("data-theme", savedTheme);
   const syncTheme = () => {
     themeBtn.setAttribute("aria-pressed", String(isDark()));
-    document.querySelectorAll('meta[name="theme-color"]').forEach(m => m.setAttribute("content", isDark() ? "#1d1b26" : "#f7f4fb"));
+    document.querySelectorAll('meta[name="theme-color"]').forEach(m => m.setAttribute("content", isDark() ? "#1c1816" : "#f7f4fb"));
   };
   themeBtn.addEventListener("click", () => { const next = isDark() ? "light" : "dark"; document.documentElement.setAttribute("data-theme", next); store.set("kb-theme", next); syncTheme(); });
   matchMedia("(prefers-color-scheme: dark)").addEventListener?.("change", syncTheme);
