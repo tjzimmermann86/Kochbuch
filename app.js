@@ -234,7 +234,6 @@
       .sort((a, b) => String(b.added || "").localeCompare(String(a.added || "")));
     const chipRow = (label, items, attr, cur) => `<div class="chiprow"><span class="chiplabel">${label}</span>${["Alle", ...items].map(c => `<button type="button" class="chip" ${attr}="${esc(c)}" aria-pressed="${c === cur}">${esc(c)}</button>`).join("")}</div>`;
     return `
-      <div class="seg" role="group" aria-label="Rezeptart">${KINDS.map(k => `<button type="button" data-kind="${k}" aria-pressed="${k === ui.kind}">${k}</button>`).join("")}</div>
       <input class="search" id="q" type="search" placeholder="Rezept oder Zutat suchen …" value="${esc(ui.query)}" aria-label="Suchen">
       ${mains.length > 1 ? chipRow("Hauptzutat", mains, "data-main", ui.main) : ""}
       ${cats.length > 1 ? chipRow("Kategorie", cats, "data-cat", ui.filter) : ""}
@@ -378,7 +377,9 @@
     $("title").textContent = r ? "Kochbuch" : ({ einkauf: "Einkaufszettel", vorrat: "Vorrat" }[ui.tab] || "Kochbuch");
     const active = document.activeElement;
     const keepFocus = active && active.id && ["q", "ctext", "sa-name", "pa-name"].includes(active.id) ? active.id : null;
-    $("view").innerHTML = r ? renderDetail(r) : ui.tab === "einkauf" ? renderShop() : ui.tab === "vorrat" ? renderPantry() : renderList();
+    const onList = !r && ui.tab === "rezepte";
+    const seg = `<div class="seg" role="group" aria-label="Rezeptart">${KINDS.map(k => `<button type="button" data-kind="${k}" aria-pressed="${onList && k === ui.kind}">${k}</button>`).join("")}</div>`;
+    $("view").innerHTML = seg + (r ? renderDetail(r) : ui.tab === "einkauf" ? renderShop() : ui.tab === "vorrat" ? renderPantry() : renderList());
     if (keepFocus && $(keepFocus)) { const el = $(keepFocus); el.focus(); try { el.setSelectionRange(el.value.length, el.value.length); } catch {} }
     badges(); syncLabel();
   }
@@ -455,7 +456,11 @@
     const d = t.dataset, act = d.act;
     const r = ui.current ? recipes.find(x => x.id === ui.current) : null;
     const factor = r ? ui.servings / (Number(r.servings) || 1) : 1;
-    if (d.kind) { ui.kind = d.kind; ui.filter = "Alle"; ui.main = "Alle"; store.set("kb-kind", ui.kind); return render(); }
+    if (d.kind) {
+      if (d.kind !== ui.kind) { ui.kind = d.kind; ui.filter = "Alle"; ui.main = "Alle"; store.set("kb-kind", ui.kind); }
+      if (ui.current || ui.tab !== "rezepte") { location.hash = ""; return; }
+      return render();
+    }
     if (d.main) { ui.main = d.main; return render(); }
     if (d.cat) { ui.filter = d.cat; return render(); }
     if (d.star) { const n = Number(d.star); ui.rating = ui.rating === n ? 0 : n; return render(); }
