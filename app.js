@@ -21,7 +21,7 @@
   const ui = {
     tab: "rezepte", current: null, kind: store.get("kb-kind", "Kochen"), filter: "Alle", main: "Alle", query: "",
     servings: null, cookStage: false, msg: "", draft: "", rating: 0, confirm: null, delStage: 0, clearStage: false,
-    loginSent: false, loginErr: "",
+    loginErr: "",
   };
   if (!KINDS.includes(ui.kind)) ui.kind = "Kochen";
   const kindOf = (r) => KINDS.includes(r.type) ? r.type : "Kochen";
@@ -212,12 +212,12 @@
   const unitSelect = (attr, val) => `<select ${attr} aria-label="Einheit">${UNIT_OPTS.map(u => `<option value="${esc(u)}"${u === (val || "") ? " selected" : ""}>${u || "—"}</option>`).join("")}${val && !UNIT_OPTS.includes(val) ? `<option selected>${esc(val)}</option>` : ""}</select>`;
 
   function loginCard(what) {
-    if (ui.loginSent) return `<div class="login"><h2>📬 Schau in dein Postfach</h2><p>Wir haben dir einen Anmeldelink geschickt. Öffne ihn auf diesem Handy, dann bist du hier angemeldet.</p><button type="button" class="link" data-act="login-again">Andere Adresse oder erneut senden</button></div>`;
-    return `<form class="login" id="login"><h2>Anmelden</h2><p>${what} wird in deinem Konto gespeichert, damit es auf all deinen Geräten gleich ist.</p>
-      <input class="field" id="login-email" type="email" autocomplete="email" inputmode="email" placeholder="deine@mail.de" required>
-      <button class="btn" type="submit">Anmeldelink schicken</button>
+    return `<form class="login" id="login"><h2>🔒 Anmelden</h2><p>${what} ist nur für dich. Gib einmal dein Kochbuch-Passwort ein, dann bleibt dieses Gerät angemeldet.</p>
+      <input class="field" id="login-pw" type="password" autocomplete="current-password" placeholder="Passwort" required>
+      <button class="btn" type="submit">Anmelden</button>
       ${ui.loginErr ? `<p style="color:var(--danger)">${esc(ui.loginErr)}</p>` : ""}</form>`;
   }
+
 
   function renderList() {
     const all = visibleRecipes();
@@ -355,7 +355,7 @@
       </ul>
       ${!items.length ? `<p class="empty">Noch nichts im Vorrat.</p>` : ""}
       <p class="msg">${esc(ui.msg)}</p>
-      <div class="foot"><span>${esc(auth.email || "")}</span><button type="button" class="link" data-act="logout">Abmelden</button></div>`;
+      <div class="foot"><span></span><button type="button" class="link" data-act="logout">Abmelden</button></div>`;
   }
 
   function badges() {
@@ -409,14 +409,15 @@
     e.preventDefault();
     const f = e.target;
     if (f.id === "login") {
-      const email = $("login-email").value.trim();
+      const password = $("login-pw").value;
       const btn = f.querySelector("button"); btn.disabled = true; ui.loginErr = "";
       try {
-        const r = await fetch("/api/auth", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ email }) });
-        if (!r.ok) throw new Error((await r.json()).error || "Fehler");
-        ui.loginSent = true;
-      } catch (err) { ui.loginErr = navigator.onLine ? "Das hat nicht geklappt: " + err.message : "Du bist offline."; }
-      render();
+        const r = await fetch("/api/auth", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ password }), credentials: "same-origin" });
+        const j = await r.json().catch(() => ({}));
+        if (!r.ok) throw new Error(j.error || "Anmeldung fehlgeschlagen.");
+        setAuth(true, null);
+        await flush(); await pull();
+      } catch (err) { ui.loginErr = navigator.onLine ? err.message : "Du bist offline."; render(); }
     }
     if (f.id === "shop-add") {
       const name = $("sa-name").value.trim(), amt = $("sa-amt").value, unit = $("sa-unit").value;
@@ -481,7 +482,6 @@
       case "clear": ui.clearStage = true; break;
       case "clear-cancel": ui.clearStage = false; break;
       case "clear-final": shopList().forEach(s => op("shopping", "del", s.id)); ui.clearStage = false; break;
-      case "login-again": ui.loginSent = false; break;
       case "logout": fetch("/api/auth", { method: "DELETE" }).finally(() => { queue = []; data = { pantry: {}, shopping: {}, comments: {}, hidden: {} }; store.set("kb-queue", queue); store.set("kb-data", data); setAuth(false); }); return;
       default: return;
     }

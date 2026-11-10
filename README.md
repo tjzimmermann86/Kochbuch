@@ -10,7 +10,7 @@ Persönliches Kochbuch als Handy-App: Rezepte mit Portionsrechner, Einkaufszette
 | Offline-Speicher & Homescreen-App | `sw.js`, `manifest.webmanifest`, `icons/` |
 | Rezepte | `data/recipes.json` |
 | Startdaten für Vorrat und Einkaufszettel (einmalig importiert) | `data/seed.json` |
-| Login per E-Mail-Link | `api/auth.js` |
+| Login per Passwort | `api/auth.js` |
 | Vorrat, Einkaufszettel, Kommentare, ausgeblendete Rezepte | `api/data.js` → Upstash Redis (Schlüssel beginnen mit `kochbuch:`) |
 
 Rezepte sind ohne Anmeldung sichtbar. Alles Persönliche liegt hinter dem Login.
@@ -19,12 +19,9 @@ Rezepte sind ohne Anmeldung sichtbar. Alles Persönliche liegt hinter dem Login.
 
 1. **Projekt anlegen:** Vercel → *Add New… → Project* → dieses Repo importieren → *Deploy*. Keine Build-Einstellungen nötig.
 2. **Datenbank verbinden:** Im neuen Projekt → *Storage* → die bestehende **Upstash-for-Redis**-Datenbank (die von garage-games) auswählen → *Connect Project*. Vercel setzt `KV_REST_API_URL` und `KV_REST_API_TOKEN` automatisch. Die Daten des Kochbuchs liegen getrennt unter `kochbuch:…`.
-3. **Mailversand:** Auf [resend.com](https://resend.com) kostenlos registrieren – **mit derselben E-Mail-Adresse, mit der du dich im Kochbuch anmelden willst** – und unter *API Keys* einen Schlüssel erstellen. Ohne eigene Domain darf Resend nur an diese Adresse schicken, das reicht hier.
-4. **Umgebungsvariablen** (Projekt → *Settings → Environment Variables*):
-   - `ALLOWED_EMAILS` – deine E-Mail-Adresse (mehrere mit Komma trennen)
-   - `RESEND_API_KEY` – der Schlüssel aus Schritt 3
-   - optional `MAIL_FROM` – Absender, wenn du in Resend eine eigene Domain einrichtest
-5. **Neu deployen** (*Deployments → … → Redeploy*), damit die Variablen greifen.
+3. **Passwort festlegen** (Projekt → *Settings → Environment Variables*): `APP_PASSWORD` mit deinem Kochbuch-Passwort anlegen, für Production und Preview, gern als *Sensitive*.
+4. **Neu deployen** (*Deployments → … → Redeploy*), damit die Variable greift.
+5. **Deployment-Schutz:** Unter *Settings → Deployment Protection* die Vercel-Authentifizierung auf „Only Preview Deployments“ stellen, sonst verlangt die Hauptadresse einen Vercel-Login.
 6. **Aufs Handy:** Adresse im Browser öffnen → *Teilen → Zum Home-Bildschirm* (iPhone) bzw. *⋮ → App installieren* (Android).
 
 ## Rezepte hinzufügen
